@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #40739e;
+        }
+        body .main{
+            text-align: center;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-image: linear-gradient(to bottom, #9c88ff, #00a8ff);
+            transition: 0.4s;
+        }
+        body .main:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transform: scale(1.1);
+        }
+        .main h1{
+            display: block;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 30px 50px 10px 50px;
+        }
+        .main label{
+            display: block;
+            background-color: #dcdde1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0px 20px 50px 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid black;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .main button{
+            padding: 20px;
+            border-radius: 50px;
+            background-color: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            transition: 0.4s;
+        }
+        .main button:hover{
+            transform: scale(1.1);
+        }
+        @media only screen and (max-width:600px) {
+            body .main{
+                padding: 10px;
+                margin: 50px 30px;
+                width: 300px;
+                height: 350px;
+                transition: 0.4s;
+            }
+            body .main:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transform: scale(1.1);
+            }
+            .main h1{
+                font-size: 25px;
+                padding: 40px 10px 10px 10px;
+            }
+            .main label{
+                font-size: medium;
+                padding: 10px;
+                height: 20px;
+                margin-bottom: 30px;
+            }
+            .main button{
+                padding: 10px;
+            }
+        }
+    </style>
+
+    <title>Shuffled Array</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Guess the Card</h1>
+        <label id="myLabel" type="text"></label>
+        <button id="btn" type="button">Shuffle</button>
+    </div>
+
+    <script src="JavaScript Files/ShuffledArray.js"></script>
+</body>
+</html>
+
