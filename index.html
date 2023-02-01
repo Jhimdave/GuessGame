@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #badc58;
+            box-sizing: border-box;
+        }
+        body .game{
+            padding: 50px;
+            text-align: center;
+            background-image: linear-gradient(to right, #7ed6df, #f6e58d);
+            width: 700px;
+            height: 350px;
+            border-radius: 50px;
+        } 
+        .game h1{
+            margin-bottom: 50px;
+        }
+        .game h5{
+            margin-left: 200px;
+            padding: 5px 10px;
+            text-align: left;
+            border-left: 3px double black;
+            font-size: 15px;
+        }
+        .inputs input{
+            width: 300px;
+            padding: 15px;
+            border-radius: 50px;
+            background-color: #f7d794;
+            font-size: 20px;
+            text-align: center;
+        }
+        .inputs p{
+            padding:  0px 20px 10px 20px;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 20px;
+            opacity: 70%;
+            border: 1px solid gray;
+            transition: 0.5s;
+        }
+        button:hover{
+            padding: 10px 50px;
+            border-radius: 20px;
+            opacity: 100%;
+            border: 1px solid gray;
+            transform: scale(1.1);
+        }
+    </style>
+
+    <title>Guess Game</title>
+</head>
+<body>
+    <div class="game">
+        <h1>Guess Game</h1>
+        <h5 id="answer">Guide: Pick a number between 1 - 10</h5>
+        <div class="inputs">
+            <input id="guess" type="text" >
+            <p>Enter your Guess Number</p>
+        </div>
+        <button id="btn" type="button">Enter</button>
+
+        <script src="JavaScript Files/guessgame.js"></script>
+    </div>
+</body>
+</html>
